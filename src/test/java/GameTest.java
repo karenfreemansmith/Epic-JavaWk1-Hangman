@@ -56,7 +56,7 @@ public class GameTest {
   public void testReplaceLetter_oneLetter() {
     Game thisGame = new Game();
     thisGame.replaceLetters("s");
-    assertEquals(true, thisGame.getWord().equals("-upercalifragilisticexpialidocious"));
+    assertEquals(true, thisGame.getWord().equals("-upercalifragili-ticexpialidociou-"));
   }
 
   // @Test

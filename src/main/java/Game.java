@@ -1,3 +1,6 @@
+import java.util.List;
+import java.util.ArrayList;
+
 public class Game {
   private String mWord = "supercalifragilisticexpialidocious";
 
@@ -22,7 +25,16 @@ public class Game {
   }
 
   public void replaceLetters(String letter) {
-    
+    List<String> newWord = new ArrayList<String>();
+
+    for(int i=0; i<mWord.length(); i++) {
+      if(Character.toString(mWord.charAt(i)).equals(letter)) {
+        newWord.add("-");
+      } else {
+        newWord.add(Character.toString(mWord.charAt(i)));
+      }
+    }
+    mWord = String.join("", newWord);
   }
 
 }

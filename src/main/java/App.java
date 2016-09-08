@@ -24,13 +24,17 @@ public class App {
         // as long as there is a matching letter fill letter into correct spot
         // use "findLetter" to get index numberuser
         userGuesses.set(hangman.findLetter(letter),letter);
+        hangman.replaceLetters(letter);
         outputString = String.join("", userGuesses);
         System.out.println(outputString);
+        System.out.println(hangman.getWord());
+
         // print out of correct guesses and their location
       } else {
         System.out.println("Sorry, that is not the right letter.");
       }
       letter = c.readLine("Guess a letter to find out the secret word! ");
+
     }
 
 
