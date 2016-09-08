@@ -6,6 +6,7 @@ public class App {
   public static void main(String[] args) {
     Console c = System.console();
     Game hangman = new Game();
+    String letter = "";
     String outputString = "";
     List<String> userGuesses = new ArrayList<String>();
     List<String> computerWord = new ArrayList<String>();
@@ -16,10 +17,8 @@ public class App {
       userGuesses.add("-");
     }
 
-    String letter = c.readLine("Guess a letter to find out the secret word! ");
-
-
-    while (!hangman.gameOver(outputString)) {
+    while (!String.join("", computerWord).equals(outputString)) {
+      letter = c.readLine("Guess a letter to find out the secret word! ");
       if (hangman.guessLetter(letter)) {
         for(int i=0; i<userGuesses.size(); i++) {
           if(computerWord.get(i).equals(letter)) {
@@ -29,14 +28,10 @@ public class App {
         outputString = String.join("", userGuesses);
         hangman.replaceLetters(letter);
         System.out.println(outputString);
-
       } else {
         System.out.println("Sorry, that is not the right letter.");
       }
-      letter = c.readLine("Guess a letter to find out the secret word! ");
-
     }
-
-
+    System.out.println("You guessed it!!!");
   }
 }
