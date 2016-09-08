@@ -33,6 +33,18 @@ public class GameTest {
     assertEquals(0, thisGame.findLetter("s"));
   }
 
+  @Test
+  public void gameOver_wordsMatch_true() {
+    Game thisGame = new Game();
+    assertEquals(true, thisGame.gameOver("supercalifragilisticexpialidocious"));
+  }
+
+  @Test
+  public void gameOver_wordsNotMatch_false() {
+    Game thisGame = new Game();
+    assertEquals(false, thisGame.gameOver("helloworld"));
+  }
+
   // @Test
   // public void newGame_getRandomWord_String() {
   //   Game thisGame = new Game();

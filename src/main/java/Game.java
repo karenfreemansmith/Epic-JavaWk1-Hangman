@@ -13,5 +13,10 @@ public class Game {
     return mWord.indexOf(letter);
   }
 
+  public boolean gameOver(String guess) {
+    return false;
+    // return mWord.equals(guess);
+  }
+
 
 }
