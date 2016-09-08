@@ -9,9 +9,14 @@ A Java word-guessing game
 Version 0.0.0: September 8, 2016
 
 ### Specifications
-| Behavior             | Input              | Output |
-|----------------------|--------------------|--------|
-|                      |                    |        |
+| Behavior                                  | Input   | Output |
+|-------------------------------------------|---------|--------|
+| Computer selects a word                   |         |        |
+| Check for a letter in the word            |         |        |
+| Figure out where the letter is in word    |         |        |
+| Check for all letters guessed             |         |        |
+|                                           |         |        |
+|                                           |         |        |
 
 ## Setup/Installation
 * Clone directory
