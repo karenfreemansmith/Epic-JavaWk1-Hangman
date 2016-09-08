@@ -14,8 +14,7 @@ public class Game {
   }
 
   public boolean gameOver(String guess) {
-    return false;
-    // return mWord.equals(guess);
+    return mWord.equals(guess);
   }
 
 
