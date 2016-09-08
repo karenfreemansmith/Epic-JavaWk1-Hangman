@@ -6,7 +6,7 @@ public class Game {
   }
 
   public void setWord(String str) {
-
+    mWord = str;
   }
 
   public boolean guessLetter(String letter) {

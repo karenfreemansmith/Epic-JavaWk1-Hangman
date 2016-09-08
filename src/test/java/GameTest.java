@@ -48,7 +48,8 @@ public class GameTest {
   @Test
   public void setWord_String() {
     Game thisGame = new Game();
-    assertEquals(true, thisGame.getWord.equals(thisGame.setWord("hello")));
+    thisGame.setWord("hello");
+    assertEquals(true, thisGame.getWord().equals("hello"));
   }
 
   // @Test
