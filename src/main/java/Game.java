@@ -5,6 +5,10 @@ public class Game {
     return mWord;
   }
 
+  public void setWord(String str) {
+
+  }
+
   public boolean guessLetter(String letter) {
     return mWord.contains(letter);
   }

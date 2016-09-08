@@ -45,6 +45,12 @@ public class GameTest {
     assertEquals(false, thisGame.gameOver("helloworld"));
   }
 
+  @Test
+  public void setWord_String() {
+    Game thisGame = new Game();
+    assertEquals(true, thisGame.getWord.equals(thisGame.setWord("hello")));
+  }
+
   // @Test
   // public void newGame_getRandomWord_String() {
   //   Game thisGame = new Game();
