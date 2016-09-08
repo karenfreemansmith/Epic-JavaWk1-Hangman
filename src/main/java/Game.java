@@ -21,5 +21,8 @@ public class Game {
     return mWord.equals(guess);
   }
 
+  public void replaceLetters(String letter) {
+    
+  }
 
 }

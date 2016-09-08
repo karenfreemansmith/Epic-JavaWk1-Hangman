@@ -52,6 +52,13 @@ public class GameTest {
     assertEquals(true, thisGame.getWord().equals("hello"));
   }
 
+  @Test
+  public void testReplaceLetter_oneLetter() {
+    Game thisGame = new Game();
+    thisGame.replaceLetters("s");
+    assertEquals(true, thisGame.getWord().equals("-upercalifragilisticexpialidocious"));
+  }
+
   // @Test
   // public void newGame_getRandomWord_String() {
   //   Game thisGame = new Game();
