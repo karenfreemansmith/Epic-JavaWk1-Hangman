@@ -10,7 +10,7 @@ public class Game {
   }
 
   public int findLetter(String letter) {
-    return 10;
+    return mWord.indexOf(letter);
   }
 
 
