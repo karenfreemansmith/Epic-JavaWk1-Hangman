@@ -4,4 +4,14 @@ public class Game {
   public String getWord() {
     return mWord;
   }
+
+  public boolean guessLetter(String letter) {
+    return mWord.contains(letter);
+  }
+
+  public int findLetter(String letter) {
+    return 10;
+  }
+
+
 }

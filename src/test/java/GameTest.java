@@ -27,6 +27,12 @@ public class GameTest {
     assertEquals(false, thisGame.guessLetter("z"));
   }
 
+  @Test
+  public void findLetter_int() {
+    Game thisGame = new Game();
+    assertEquals(0, thisGame.findLetter("s"));
+  }
+
   // @Test
   // public void newGame_getRandomWord_String() {
   //   Game thisGame = new Game();
